@@ -11,5 +11,16 @@
   "scripts": {},
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emapeire/playwright-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/emapeire/playwright-test/issues"
+  },
+  "homepage": "https://github.com/emapeire/playwright-test#readme"
 }
