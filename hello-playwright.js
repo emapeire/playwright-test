@@ -2,9 +2,13 @@ const { chromium } = require('playwright');
 
 (async () => {
   const browser = await chromium.launch({
-    headless: false
+    headless: true,
   });
-  const context = await browser.newContext();
+  const context = await browser.newContext({
+    recordVideo: {
+      dir: 'Videos'
+    }
+  });
 
   // Open new page
   const page = await context.newPage();
@@ -19,6 +23,8 @@ const { chromium } = require('playwright');
   // Click text=NASA >> nth=0
   await page.locator('text=NASA').first().click();
   await page.waitForURL('https://en.wikipedia.org/wiki/NASA');
+
+  await page.screenshot({ path: './Images/wiki_screen.png'});
 
   // ---------------------
   await context.close();
