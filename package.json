@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "hello-playwright.js",
-  "dependencies": {
-    "playwright": "^1.25.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@playwright/test": "^1.25.1"
+    "@playwright/test": "^1.25.1",
+    "playwright": "^1.25.1"
   },
   "scripts": {},
   "keywords": [],
