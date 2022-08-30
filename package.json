@@ -1,0 +1,16 @@
+{
+  "name": "playwright-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello-playwright.js",
+  "dependencies": {
+    "playwright": "^1.25.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.25.1"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
